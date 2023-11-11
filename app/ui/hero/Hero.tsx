@@ -5,7 +5,7 @@ import { shoes, statistics } from "@/app/lib/constants.index"
 import { montserrat, palanquin } from "../fonts"
 import Image, { StaticImageData } from "next/image"
 import { bigShoe1 } from "@/assets/images"
-import ShoeCard from "./ShoeCard"
+import ShoeCard from "../ShoeCard"
 import { useState } from "react"
 
 const Hero = () => {
@@ -36,7 +36,7 @@ const Hero = () => {
             Discover stylish Nike arrivals, quality comfort, and innovation for
             your active life.
           </p>
-          <Button label="Shop Now" iconUrl={arrowRight} />
+          <Button label="Shop now" iconUrl={arrowRight} />
 
           <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
             {statistics.map((stat) => (
