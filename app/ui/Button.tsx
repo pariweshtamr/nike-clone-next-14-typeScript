@@ -2,13 +2,14 @@ import { ButtonProps } from "@/types/types"
 import Image from "next/image"
 import { montserrat } from "./fonts"
 
-const Button = ({ label, iconUrl, className }: ButtonProps) => {
+const Button = ({ label, iconUrl, className, icon }: ButtonProps) => {
   return (
     <button
       className={`${montserrat.className} flex justify-center items-center gap-2 px-7 py-4 text-lg leading-none rounded-full
        bg-coral-red text-white border-coral-red ${className}`}
     >
       {label}
+      {icon && <div>{icon}</div>}
       {iconUrl && (
         <Image
           src={iconUrl}

@@ -1,9 +1,11 @@
 import { StaticImageData } from "next/image"
+import { ReactNode } from "react"
 
 export interface ButtonProps {
   label: string
   iconUrl?: string
   className?: string
+  icon?: ReactNode
 }
 
 export interface ShoeCardProps {
